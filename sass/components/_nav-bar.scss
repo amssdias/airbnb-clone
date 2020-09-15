@@ -1,0 +1,56 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    position: relative;
+
+
+    &__search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+
+        &__links {
+            font-size: 2rem;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-top: 1rem;
+                content: "";
+                display: block;
+                width: 0rem;
+                height: .2rem;
+                border-radius: 40rem;
+                background-color: black;
+
+                transition: .2s;
+            }
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.7);
+                cursor: pointer;
+
+                &::after {
+                    width: 2rem;
+                    overflow: hidden;
+                }
+
+            }
+        }
+
+    }
+
+    &__settings {
+
+    }
+}

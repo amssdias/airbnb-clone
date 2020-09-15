@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/5cf6dd6ac1.js" crossorigin="anonymous"></script>
+
     <title>Airbnb</title>
 </head>
 <body>
     
+    <!-- Header -->
     <header class="header">
 
+        <!-- Nav bar -->
         <nav class="nav-bar">
-            <div class="nav-bar__logo">
-                airbnb
+
+            <div class="logo">
+                <i class="fab fa-airbnb"></i>
+                <span class="logo__word">airbnb</span>
             </div>
 
             <div class="nav-bar__search">
-                <h4 class="heading-forth">Places to stay</h4>
-                <h4 class="heading-forth">Experiences</h4>
-                <h4 class="heading-forth">Online Experiences</h4>
+                <span class="nav-bar__search__links">Places to stay</span>
+                <span class="nav-bar__search__links">Experiences</span>
+                <span class="nav-bar__search__links ">Online Experiences</span>
             </div>
 
             <div class="nav-bar__settings">
-                <span>Become a host</span>
-                <span>Logo</span>
-                <span>user</span>
+                <button class="btn-white">Become a host</button>
+                <button class="btn-white"><i class="fas fa-globe margin-right-xsmall"></i><i class="fas fa-angle-down"></i></button>
+                <button class="btn-white background-color"><i class="fas fa-bars margin-right-xsmall"></i><i class="fas fa-user-circle"></i></button>
             </div>
         </nav>
 

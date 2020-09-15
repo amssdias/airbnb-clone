@@ -1,0 +1,27 @@
+.btn-white {
+    padding: 1.5rem 1.5rem;
+    border-radius: 40rem;
+    border: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover:not(:last-child) {
+        background-color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+    }
+}
+
+.btn-white:last-child {
+    background-color: white;
+    transition: .2s;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0rem .3rem .7rem rgba(0, 0, 0, 0.6);
+    }
+}

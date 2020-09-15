@@ -12,6 +12,105 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.margin-right-xsmall {
+  margin-right: 1rem;
+}
+
+.margin-right-small {
+  margin-right: 2rem;
+}
+
+.margin-right-medium {
+  margin-right: 3rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  position: relative;
+}
+.nav-bar__search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+.nav-bar__search__links {
+  font-size: 2rem;
+  position: relative;
+}
+.nav-bar__search__links::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  content: "";
+  display: block;
+  width: 0rem;
+  height: 0.2rem;
+  border-radius: 40rem;
+  background-color: black;
+  transition: 0.2s;
+}
+.nav-bar__search__links:hover {
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.nav-bar__search__links:hover::after {
+  width: 2rem;
+  overflow: hidden;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  color: red;
+  font-weight: 700;
+}
+.logo__word {
+  margin-left: 0.6rem;
+  font-size: 2.3rem;
+}
+
+.btn-white {
+  padding: 1.5rem 1.5rem;
+  border-radius: 40rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: transparent;
+}
+.btn-white:focus {
+  outline: none;
+}
+.btn-white:hover:not(:last-child) {
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.btn-white:last-child {
+  background-color: white;
+  transition: 0.2s;
+}
+.btn-white:last-child:hover {
+  cursor: pointer;
+  box-shadow: 0rem 0.3rem 0.7rem rgba(0, 0, 0, 0.6);
+}
+
+.header {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 65rem;
 }
 
 /*# sourceMappingURL=main.css.map */
