@@ -11,6 +11,9 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/5cf6dd6ac1.js" crossorigin="anonymous"></script>
 
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
     <title>Airbnb</title>
 </head>
 <body>
@@ -27,8 +30,8 @@
             </div>
 
             <div class="nav-bar__search">
-                <span class="nav-bar__search__links">Places to stay</span>
-                <span class="nav-bar__search__links">Experiences</span>
+                <span class="nav-bar__search__links nav-link" data-page="search__bar--main-box">Places to stay</span>
+                <span class="nav-bar__search__links nav-link" data-page="search__bar-experiences">Experiences</span>
                 <span class="nav-bar__search__links ">Online Experiences</span>
             </div>
 
@@ -39,38 +42,57 @@
             </div>
         </nav>
 
+        <!-- Search bar -->
         <div class="header__search">
 
-            <div class="header__search--main-box">
+            <!-- Main box -->
+            <div class="search__bar--main-box search-bar" id="places-to-stay">
 
-                <label for="location" class="header__search--box">
-                    <span class="header__search--box-top">Location</span>
-                    <input class="header__search--box-input" type="text" placeholder="Where you going?">
+                <label for="location" class="search__bar--box">
+                    <span class="search__bar--box-top">Location</span>
+                    <input class="search__bar--box-input" type="text" placeholder="Where you going?">
                 </label>
     
-                <div class="header__search--box">
-                    <span class="header__search--box-top">Check in</span>
-                    <span class="header__search--box-bottom">Add dates</span>
+                <div class="search__bar--box">
+                    <span class="search__bar--box-top">Check in</span>
+                    <span class="search__bar--box-bottom">Add dates</span>
                 </div>
     
-                <div class="header__search--box">
-                    <span class="header__search--box-top">Check out</span>
-                    <span class="header__search--box-bottom">Add dates</span>
+                <div class="search__bar--box">
+                    <span class="search__bar--box-top">Check out</span>
+                    <span class="search__bar--box-bottom">Add dates</span>
                 </div>
     
-                <div class="header__search--box">
+                <div class="search__bar--box">
                     
-                    <span class="header__search--box-top">Guests</span>
-                    <span class="header__search--box-bottom">Add guests</span>
+                    <span class="search__bar--box-top">Guests</span>
+                    <span class="search__bar--box-bottom">Add guests</span>
 
-                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <button class="btn-search margin-right-small"><i class="fas fa-search"></i></button>
                 </div>
 
             </div>
 
-            
+            <!-- Experiences box -->
+            <div class="search__bar-experiences search-bar" id="experiences">
+
+                <label class="search__bar--box" for="location">
+                    <span class="search__bar--box-top">Location</span>
+                    <input class="search__bar--box-input" type="text" placeholder="Where you going?">
+                </label>
+    
+                <div class="search__bar--box">
+                    
+                    <span class="search__bar--box-top">Date</span>
+                    <span class="search__bar--box-bottom">Add when you want to go</span>
+
+                    <button class="btn-search margin-right-small"><i class="fas fa-search"></i></button>
+                </div>
+
+            </div>
 
         </div>
+
 
     </header>
 

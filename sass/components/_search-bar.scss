@@ -1,0 +1,81 @@
+.search__bar {
+
+    &--main-box {
+        @include search-bar;
+    }
+
+    &-experiences {
+        @include search-bar;
+        display: none;
+    }
+
+    // Style each search "button" from MAIN box
+    &--box {           
+        padding: 2rem 4rem;
+        padding-right: 10rem;
+        border-radius: 40rem;
+
+        background: white;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.1);
+
+            // Makes the bar disappear from the "button"
+            &:not(:last-child)::after {
+                background-color: transparent;
+            }
+        }
+
+        // Creates small bar next to the "button"
+        &:not(:last-child)::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0%;
+            width: .1rem;
+            height: 3.5rem;
+
+            background-color:rgba(0, 0, 0, 0.1);
+
+        }
+
+        // CSS for the input "button"
+        &-input {
+            border: none;
+            background-color: transparent;
+
+            &::placeholder{
+                font-size: 1.6rem;
+                font-weight: 0;
+                color: rgba(0, 0, 0, 0.5);
+            }
+        
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        // Style for the text inside each button
+        &-top {
+            font-weight: 700;
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+        }
+
+        &-bottom {
+            font-size: 1.6rem;
+            font-weight: 0;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        
+    }
+}
