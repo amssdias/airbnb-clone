@@ -25,3 +25,20 @@
         box-shadow: 0rem .3rem .7rem rgba(0, 0, 0, 0.6);
     }
 }
+
+.btn-search {
+    border:none;
+    position: absolute;
+    right: 5%;
+    padding: 2.2rem;
+    border-radius: 40rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(183, 21, 64, 0.8);
+
+    transition: .5s;
+
+    &:hover {
+        background-color: rgba(183, 21, 64, 1);
+    }
+}
