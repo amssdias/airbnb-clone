@@ -167,6 +167,11 @@ body {
   border: none;
   background-color: transparent;
 }
+.header__search--box-input::placeholder {
+  font-size: 1.6rem;
+  font-weight: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
 .header__search--box-input:focus {
   outline: none;
 }

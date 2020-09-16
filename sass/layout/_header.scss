@@ -56,6 +56,13 @@
                 border: none;
                 background-color: transparent;
 
+                &::placeholder{
+                    font-size: 1.6rem;
+                    font-weight: 0;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+                
+
                 &:focus {
                     outline: none;
                 }
