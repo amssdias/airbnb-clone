@@ -5,13 +5,17 @@
     font-weight: 700;
     font-size: 1.6rem;
     background-color: transparent;
+    
+    &:not(:last-child) {
+        color: white;
+    }
 
     &:focus {
         outline: none;
     }
 
     &:hover:not(:last-child) {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.3);
         cursor: pointer;
     }
 }
@@ -40,5 +44,18 @@
 
     &:hover {
         background-color: rgba(183, 21, 64, 1);
+    }
+}
+
+.btn-white-explore {
+    border: none;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    font-weight: 700;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.9);
     }
 }

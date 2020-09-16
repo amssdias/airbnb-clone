@@ -12,6 +12,8 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
 
+        color: white;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,14 +33,14 @@
                 width: 0rem;
                 height: .2rem;
                 border-radius: 40rem;
-                background-color: black;
+                background-color: white;
 
                 transition: .2s;
             }
             
 
             &:hover {
-                color: rgba(0, 0, 0, 0.7);
+                color: rgba(255, 255, 255, 0.7);
                 cursor: pointer;
 
                 &::after {
@@ -52,6 +54,6 @@
     }
 
     &__settings {
-
+        
     }
 }

@@ -15,6 +15,16 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.heading-primary {
+  font-size: 4.5rem;
+  font-weight: 999;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 999;
+}
+
 .margin-right-xsmall {
   margin-right: 1rem;
 }
@@ -27,16 +37,8 @@ body {
   margin-right: 3rem;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 3rem;
-  color: red;
-  font-weight: 700;
-}
-.logo__word {
-  margin-left: 0.6rem;
-  font-size: 2.3rem;
+.margin-bottom-xsmall {
+  margin-bottom: 1rem;
 }
 
 .btn-white {
@@ -47,11 +49,14 @@ body {
   font-size: 1.6rem;
   background-color: transparent;
 }
+.btn-white:not(:last-child) {
+  color: white;
+}
 .btn-white:focus {
   outline: none;
 }
 .btn-white:hover:not(:last-child) {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
@@ -79,6 +84,45 @@ body {
   background-color: #b71540;
 }
 
+.btn-white-explore {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+.btn-white-explore:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.covid-bar {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 999;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+}
+.logo__link:link, .logo__link:visited {
+  color: white;
+  text-decoration: none;
+}
+.logo__word {
+  margin-left: 0.6rem;
+  font-size: 2.3rem;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -91,6 +135,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,11 +155,11 @@ body {
   width: 0rem;
   height: 0.2rem;
   border-radius: 40rem;
-  background-color: black;
+  background-color: white;
   transition: 0.2s;
 }
 .nav-bar__search__links:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 .nav-bar__search__links:hover::after {
@@ -125,13 +170,13 @@ body {
   display: flex;
   background-color: white;
   border-radius: 40rem;
-  width: 63%;
+  width: 70%;
 }
 .search__bar-experiences {
   display: flex;
   background-color: white;
   border-radius: 40rem;
-  width: 63%;
+  width: 70%;
   display: none;
 }
 .search__bar--box {
@@ -185,15 +230,23 @@ body {
 }
 
 .header {
-  background-image: url("../img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header.jpg");
   background-size: cover;
   background-position: top;
-  height: 65rem;
+  padding: 0rem 4rem;
+  height: 63rem;
 }
 .header__search {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.header__slogan {
+  width: 40%;
+  margin-top: 15rem;
+  color: white;
+  padding: 3rem 4rem;
+  padding-right: 16rem;
 }
 
 /*# sourceMappingURL=main.css.map */

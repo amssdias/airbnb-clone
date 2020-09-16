@@ -2,8 +2,14 @@
     display: flex;
     align-items: center;
     font-size: 3rem;
-    color: red;
+    color: white;
     font-weight: 700;
+
+    &__link:link,
+    &__link:visited {
+        color: white;
+        text-decoration: none;
+    }
 
     &__word {
         margin-left: .6rem;

@@ -1,14 +1,24 @@
 .header {
-    background-image: url("../img/header.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/header.jpg");
     background-size: cover;
     background-position: top;
 
-    height: 65rem;
+    padding: 0rem 4rem;
+
+    height: 63rem;
 
     &__search {
         display: flex;
         flex-direction: row;
         justify-content: center;
 
+    }
+
+    &__slogan {
+        width: 40%;
+        margin-top: 15rem;
+        color: white;
+        padding: 3rem 4rem;
+        padding-right: 16rem;
     }
 }
