@@ -4,3 +4,10 @@
     border-radius: 40rem;
     width: 70%;
 }
+
+@mixin btn-search-explore {
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}

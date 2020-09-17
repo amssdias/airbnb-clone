@@ -15,11 +15,14 @@
     }
 
     &__slogan {
-        width: 40%;
-        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         color: white;
-        padding: 3rem 4rem;
-        padding-right: 16rem;
+        height: 73%;
+        width: 30%;
+        padding-left: 5rem;
     }
 
 }

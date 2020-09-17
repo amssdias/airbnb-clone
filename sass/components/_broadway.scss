@@ -1,0 +1,25 @@
+.broadway {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        width: 35%;
+
+        &-paragraph {
+            font-size: 1.6rem;
+        }
+    }
+
+    &--btn {
+        @include btn-search-explore;
+        
+        color: white;
+        background-color: rgba(0,0,0);
+        border: 2px solid white;
+
+        &:hover {
+            background-color: rgba(255,255,255,0.4);
+        }
+    }
+}
