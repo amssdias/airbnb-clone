@@ -107,6 +107,34 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.card {
+  height: 38rem;
+  width: 35%;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0.5rem 0.2rem 1rem rgba(0, 0, 0, 0.4);
+}
+.card--image {
+  object-fit: cover;
+  height: 29rem;
+  width: 100%;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.card__text {
+  border: 1px solid green;
+}
+.card--heading {
+  font-size: 1.8rem;
+  padding: 1.2rem 1.5rem;
+}
+.card--paragraph {
+  padding: 0rem 1.5rem;
+  padding-top: -1rem;
+  font-size: 1.6rem;
+  font-weight: 0;
+}
+
 .covid-bar {
   padding: 2rem;
   display: flex;
@@ -281,6 +309,13 @@ body {
   color: white;
   padding: 3rem 4rem;
   padding-right: 16rem;
+}
+
+.section-cards {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 10rem;
+  padding-bottom: 10rem;
 }
 
 /*# sourceMappingURL=main.css.map */
