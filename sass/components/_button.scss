@@ -5,26 +5,25 @@
     font-weight: 700;
     font-size: 1.6rem;
     background-color: transparent;
-    
-    &:not(:last-child) {
-        color: white;
-    }
+    color: white;
 
     &:focus {
         outline: none;
     }
 
-    &:hover:not(:last-child) {
+    &:hover {
         background-color: rgba(255, 255, 255, 0.3);
         cursor: pointer;
     }
 }
 
-.btn-white:last-child {
+.btn-white-profile {
+    color: black;
     background-color: white;
     transition: .2s;
 
     &:hover {
+        background-color: white;
         cursor: pointer;
         box-shadow: 0rem .3rem .7rem rgba(0, 0, 0, 0.6);
     }

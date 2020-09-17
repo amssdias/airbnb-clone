@@ -25,6 +25,17 @@ body {
   font-weight: 999;
 }
 
+.menu-text {
+  display: block;
+  padding: 1.5rem 1.5rem;
+  background-color: white;
+  text-decoration: none;
+}
+.menu-text:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 .margin-right-xsmall {
   margin-right: 1rem;
 }
@@ -48,23 +59,23 @@ body {
   font-weight: 700;
   font-size: 1.6rem;
   background-color: transparent;
-}
-.btn-white:not(:last-child) {
   color: white;
 }
 .btn-white:focus {
   outline: none;
 }
-.btn-white:hover:not(:last-child) {
+.btn-white:hover {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
-.btn-white:last-child {
+.btn-white-profile {
+  color: black;
   background-color: white;
   transition: 0.2s;
 }
-.btn-white:last-child:hover {
+.btn-white-profile:hover {
+  background-color: white;
   cursor: pointer;
   box-shadow: 0rem 0.3rem 0.7rem rgba(0, 0, 0, 0.6);
 }
@@ -166,6 +177,29 @@ body {
   width: 2rem;
   overflow: hidden;
 }
+.nav-bar__settings {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar__settings-menu {
+  position: relative;
+}
+.nav-bar__settings-menu--1 {
+  background-color: white;
+  color: black;
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+  font-weight: 999;
+  font-size: 1.4rem;
+  width: 20rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  position: absolute;
+  right: 0%;
+  bottom: -240%;
+  z-index: 1;
+  display: none;
+}
+
 .search__bar--main-box {
   display: flex;
   background-color: white;

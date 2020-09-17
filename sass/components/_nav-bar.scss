@@ -54,6 +54,32 @@
     }
 
     &__settings {
-        
+        display: flex;
+        justify-content: space-between;
+
+        &-menu {
+
+            position: relative;
+
+            &--1 {
+                background-color: white;
+                color: black;
+                padding: 1rem 0rem;
+                border-radius: 1rem;
+                font-weight: 999;
+                font-size: 1.4rem;
+                width: 20rem;
+                box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.7);
+
+                position: absolute;
+                right: 0%;
+                bottom: -240%;
+                z-index: 1;
+
+                display: none;
+
+            }
+        }
+
     }
 }

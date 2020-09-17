@@ -37,15 +37,31 @@
             </div>
 
             <div class="nav-bar__search">
-                <span class="nav-bar__search__links nav-link" data-page="search__bar--main-box">Places to stay</span>
-                <span class="nav-bar__search__links nav-link" data-page="search__bar-experiences">Experiences</span>
+                <span class="nav-bar__search__links nav-link" data-page="places-to-stay">Places to stay</span>
+                <span class="nav-bar__search__links nav-link" data-page="experiences">Experiences</span>
                 <span class="nav-bar__search__links ">Online Experiences</span>
             </div>
 
             <div class="nav-bar__settings">
                 <button class="btn-white">Become a host</button>
-                <button class="btn-white"><i class="fas fa-globe margin-right-xsmall"></i><i class="fas fa-angle-down"></i></button>
-                <button class="btn-white background-color"><i class="fas fa-bars margin-right-xsmall"></i><i class="fas fa-user-circle"></i></button>
+
+                <div class="nav-bar__settings-menu margin-right-xsmall">
+                    <button class="btn-white setting-link" data-menu="settings-lan"><i class="fas fa-globe margin-right-xsmall"></i><i class="fas fa-angle-down"></i></button>
+
+                    <div class="nav-bar__settings-menu--1 settings-menu" id="settings-lan">
+                        <a class="menu-text"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
+                        <a class="menu-text"><i class="fas fa-globe margin-right-xsmall"></i>Eur</a>
+                    </div>                    
+                </div>
+
+                <div class="nav-bar__settings-menu">
+                    <button class="btn-white btn-white-profile setting-link background-color" data-menu="settings-profile"><i class="fas fa-bars margin-right-xsmall"></i><i class="fas fa-user-circle"></i></button>
+
+                    <div class="nav-bar__settings-menu--1 settings-menu" id="settings-profile">
+                        <a class="menu-text"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
+                        <a class="menu-text"><i class="fas fa-globe margin-right-xsmall"></i>Eur</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -108,6 +124,7 @@
 
 
     </header>
+
 
 </body>
 </html>
