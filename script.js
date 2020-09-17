@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function()
         };
     });
 
-
+    // Function to show the settings menu
     document.querySelectorAll(".setting-link").forEach(setLink => 
     {
         setLink.onclick = function() 
         {
-            document.querySelectorAll(".settings-menu").forEach(sett => 
+            document.querySelectorAll(`.${this.dataset.hide}`).forEach(sett => 
             {
                 sett.style.display = "none";
             })
@@ -31,5 +31,17 @@ document.addEventListener("DOMContentLoaded", function()
             document.querySelector(`#${this.dataset.menu}`).style.display = "block";
         }
     });
+
+    // Function to hide the settings menu if clicked outside the menu
+    document.onclick = function(e)
+    {
+        if (e.target.id !== "button-settings")
+        {
+            document.querySelectorAll(".settings-menu").forEach(setmenu => 
+            {
+                setmenu.style.display = "none";
+            });
+        };
+    };
 
 });
