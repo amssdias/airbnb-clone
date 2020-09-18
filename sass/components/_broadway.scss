@@ -22,4 +22,90 @@
             background-color: rgba(255,255,255,0.4);
         }
     }
+
+    &__cards {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        &__middle {
+            width: 49%;
+            height: 66.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-up {
+                display: flex;
+                justify-content: space-between;
+                height: 49%;
+            }
+        }
+
+    }
+
+
+    // Each card 
+    &__card {
+
+        &-1 {
+            width: 49%;
+            cursor: pointer;
+
+            &--image {
+                height: 60rem;
+                width: 100%;
+                
+                @include broadway-image;
+            }
+        
+        }
+
+        &-2 {
+            width: 48%;
+            cursor: pointer;
+
+            &--image {
+                height: 75%;
+                width: 100%;
+                
+                @include broadway-image;
+            }
+        }
+
+        &-3 {
+            width: 48%;
+            cursor: pointer;
+
+            &--image {
+                height: 75%;
+                width: 100%;
+                
+                @include broadway-image;
+            }
+        }
+
+        &-4 {
+            height: 49%;
+            cursor: pointer;
+
+            &--image {
+                height: 80%;
+                width: 100%;
+                
+                @include broadway-image;
+            }
+        }
+
+        &--heading {
+            font-size: 1.5rem;
+            padding: 1.6rem;
+            padding-bottom: 3rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 100%;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+        }
+    }
 }

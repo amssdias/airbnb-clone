@@ -11,3 +11,10 @@
     border-radius: 1rem;
     font-weight: 700;
 }
+
+@mixin broadway-image {
+    object-fit: cover;
+    vertical-align: bottom;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
