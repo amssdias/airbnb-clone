@@ -12,10 +12,10 @@
     }
 
     &--btn {
-        @include btn-search-explore;
+        @include link-btn;
         
         color: white;
-        background-color: rgba(0,0,0);
+        background-color: transparent;
         border: 2px solid white;
 
         &:hover {

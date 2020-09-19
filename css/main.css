@@ -40,6 +40,25 @@ body {
   cursor: pointer;
 }
 
+.heading-blm-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 5rem;
+  font-size: 3.5rem;
+  font-weight: 999;
+  width: 49%;
+}
+
+.paragraph-blm {
+  width: 49%;
+  padding-right: 16rem;
+  line-height: 1.6;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
 .margin-right-xsmall {
   margin-right: 1rem;
 }
@@ -73,11 +92,13 @@ body {
 }
 .broadway--btn {
   cursor: pointer;
+  text-decoration: none;
   padding: 1rem 1rem;
   border-radius: 1rem;
   font-weight: 700;
+  font-size: 1.4rem;
   color: white;
-  background-color: black;
+  background-color: transparent;
   border: 2px solid white;
 }
 .broadway--btn:hover {
@@ -203,14 +224,31 @@ body {
 
 .btn-white-explore {
   cursor: pointer;
+  text-decoration: none;
   padding: 1rem 1rem;
   border-radius: 1rem;
   font-weight: 700;
+  font-size: 1.4rem;
   border: none;
   background-color: white;
+  color: black;
 }
 .btn-white-explore:hover {
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-blm {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border: 1px solid black;
+  color: black;
+}
+.btn-blm:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -314,6 +352,7 @@ body {
 .nav-bar__settings {
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 .nav-bar__settings-menu {
   position: relative;
@@ -431,6 +470,13 @@ body {
   background-color: black;
   color: white;
   padding: 6rem 10rem;
+}
+
+.section-blm {
+  padding: 9rem 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

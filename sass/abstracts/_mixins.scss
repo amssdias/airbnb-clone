@@ -5,11 +5,13 @@
     width: 70%;
 }
 
-@mixin btn-search-explore {
+@mixin link-btn {
     cursor: pointer;
+    text-decoration: none;
     padding: 1rem 1rem;
     border-radius: 1rem;
     font-weight: 700;
+    font-size: 1.4rem;
 }
 
 @mixin broadway-image {

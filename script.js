@@ -18,32 +18,42 @@ document.addEventListener("DOMContentLoaded", function()
         };
     });
 
-    // Function to show the settings menu
-    document.querySelectorAll(".setting-link").forEach(setLink => 
+    document.addEventListener("click", event => 
     {
-        setLink.onclick = function() 
-        {   
-            document.querySelectorAll(`.${this.dataset.hide}`).forEach(sett => 
-            {
-                sett.style.display = "none";
-            })
+        const element = event.target;
 
-            document.querySelector(`#${this.dataset.menu}`).style.display = "block";
-        };
-    });
-
-    // Function to hide the settings menu if clicked outside the menu
-    document.onclick = function(e)
-    {
-        console.log(e.target.dataset.hide)
-        if (e.target.dataset.hide !== "settings-menu")
+        // If the element's touched is the button of settings menu
+        if (element.dataset.hide === "settings-menu")
         {
-            document.querySelectorAll(".settings-menu").forEach(setmenu => 
+            // Hide all the menus
+            document.querySelectorAll(`.${element.dataset.hide}`).forEach( hd => 
             {
-                setmenu.style.display = "none";
+                hd.style.display = "none";
+            });
+
+            // Get the id menu we want to show
+            const elementMenu = document.querySelector(`#${element.dataset.menu}`);
+            
+            // If it's hiden, make it visible 
+            if (elementMenu.style.display === "none")
+            {
+                elementMenu.style.display = "block";
+            }
+            else
+            {
+                elementMenu.style.display = "none";
+            }
+        }
+        
+        // Hide all the seetings menu
+        else
+        {
+            document.querySelectorAll(".settings-menu").forEach( menu => 
+            {
+                menu.style.display = "none";
             });
         };
-    };
+    });
     
 
 });
