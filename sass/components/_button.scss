@@ -2,10 +2,11 @@
     padding: 1.5rem 1.5rem;
     border-radius: 40rem;
     border: none;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.6rem;
     background-color: transparent;
     color: white;
+    text-decoration: none;
 
     &:focus {
         outline: none;
@@ -34,12 +35,12 @@
     border:none;
     position: absolute;
     right: 0%;
-    padding: 2.2rem;
-    border-radius: 40rem;
+    padding: 1.8rem;
+    border-radius: 50%;
     cursor: pointer;
     color: white;
-    background-color: rgba(183, 21, 64, 0.8);
-
+    background-color: rgb(255, 69, 0);
+    
     transition: .5s;
 
     &:hover {

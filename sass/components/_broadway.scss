@@ -1,7 +1,7 @@
 .broadway {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     &__text {
         width: 35%;

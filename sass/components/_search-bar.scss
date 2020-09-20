@@ -11,8 +11,7 @@
 
     // Style each search "button" from MAIN box
     &--box {           
-        padding: 2rem 4rem;
-        padding-right: 10rem;
+        padding: 1.5rem 2rem;
         border-radius: 40rem;
 
         background: white;
@@ -20,9 +19,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-grow: 1;
+        align-items: flex-start;
+        flex-grow: 2;
 
         position: relative;
+
+        &:first-child {
+            padding-left: 5rem;
+        }
+
+        &:last-child {
+            padding-right: 5rem;
+        }
 
         &:hover {
             cursor: pointer;
@@ -67,7 +75,7 @@
         &-top {
             font-weight: 700;
             font-size: 1.4rem;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
         }
 
         &-bottom {

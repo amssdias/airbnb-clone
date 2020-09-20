@@ -3,9 +3,9 @@
     background-size: cover;
     background-position: top;
 
-    padding: 0rem 4rem;
+    padding: 0rem 8rem;
 
-    height: 63rem;
+    height: 61rem;
 
     &__search {
         display: flex;
@@ -21,8 +21,11 @@
         align-items: flex-start;
         color: white;
         height: 73%;
-        width: 30%;
-        padding-left: 5rem;
+        width: 100%;
+
+        & > *:not(:last-child){
+            width: 25%;
+        }
     }
 
 }

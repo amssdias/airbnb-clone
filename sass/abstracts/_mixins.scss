@@ -2,13 +2,13 @@
     display: flex;
     background-color: white;
     border-radius: 40rem;
-    width: 70%;
+    width: 60%;
 }
 
 @mixin link-btn {
     cursor: pointer;
     text-decoration: none;
-    padding: 1rem 1rem;
+    padding: 1rem 1.4rem;
     border-radius: 1rem;
     font-weight: 700;
     font-size: 1.4rem;
