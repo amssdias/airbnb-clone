@@ -1,6 +1,7 @@
 // When document is loaded
 document.addEventListener("DOMContentLoaded", function()
 {
+    // Header Search bar
     // Loop thru each link for search
     document.querySelectorAll(".nav-link").forEach(link => 
     {
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function()
         };
     });
 
+    // Header Settings menu
     document.addEventListener("click", event => 
     {
         const element = event.target;
@@ -54,6 +56,20 @@ document.addEventListener("DOMContentLoaded", function()
             });
         };
     });
+
+    // Section - Future trips
+    // Loop thru each link for search
+    document.querySelectorAll(".future-trips__links-link").forEach(destiny => 
+        {
+            // When each link is clicked
+            destiny.onclick = function(eve) 
+            {
+                var rem = document.querySelector(".future-trips__links-link-active");
+                rem.classList.remove("future-trips__links-link-active");
+                eve.target.classList.add("future-trips__links-link-active");
+    
+            };
+        });
     
 
 });

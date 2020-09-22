@@ -1,0 +1,52 @@
+.future-trips {
+    //border: 1px solid red;
+    height: 100%;
+
+    &__links {
+        border-bottom: 1.5px solid  rgba(0, 0, 0, 0.4);
+        padding: 1.5rem 0rem;
+
+        &-link {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.4);
+            font-weight: 700;
+            padding: 1rem 1rem;
+            margin-left: -1rem;
+            transform: 0.2s;
+            z-index: 2;
+
+            &-active {
+                color: rgba(0, 0, 0);
+                cursor: default;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    height: 2px;
+                    background-color: black;
+                    position: absolute;
+                    bottom: -0.6rem;
+                    left: 1rem;
+                    right: 1rem;
+                }
+                
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 1rem;
+
+                &:not(.future-trips__links-link-active) {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
