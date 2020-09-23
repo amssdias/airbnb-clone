@@ -531,6 +531,12 @@ body {
   width: 25%;
 }
 
+.footer {
+  height: 50rem;
+  background-color: #F7F7F7;
+  border-top: 1px solid #DDDDDD;
+  padding: 2rem 8rem;
+}
 .section-cards {
   display: flex;
   justify-content: center;
