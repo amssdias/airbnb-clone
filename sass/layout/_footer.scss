@@ -40,14 +40,13 @@
     &__box2 {
         padding: 3rem 0rem;
 
-        &--details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        &--details {
             font-size: 1.4rem;
             font-weight: 0;
-
-            &-copyright {
-
-            }
 
             &-links {
                 text-decoration: none;
@@ -55,6 +54,34 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+            }
+        }
+
+        &--social-network {
+
+            &-links {
+                font-size: 1.4rem;
+                margin-right: 2rem;
+                font-weight: 400;
+                text-decoration: underline;
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+            }
+
+            &-symbol {
+                font-size: 2rem;
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgba(0, 0, 0, 0.8);
                 }
             }
         }

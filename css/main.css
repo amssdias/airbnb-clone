@@ -568,6 +568,9 @@ body {
 }
 .footer__box2 {
   padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__box2--details {
   font-size: 1.4rem;
@@ -579,6 +582,26 @@ body {
 }
 .footer__box2--details-links:hover {
   text-decoration: underline;
+}
+.footer__box2--social-network-links {
+  font-size: 1.4rem;
+  margin-right: 2rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.footer__box2--social-network-links:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer__box2--social-network-symbol {
+  font-size: 2rem;
+}
+.footer__box2--social-network-symbol:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer__box2--social-network-symbol:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .mid-dot {
