@@ -24,6 +24,11 @@ body {
   font-size: 3.2rem;
 }
 
+.heading-forth {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
 .paragraph {
   font-size: 1.4rem;
   font-weight: 400;
@@ -532,11 +537,30 @@ body {
 }
 
 .footer {
-  height: 50rem;
+  height: 47rem;
   background-color: #F7F7F7;
   border-top: 1px solid #DDDDDD;
-  padding: 2rem 8rem;
+  padding: 4rem 8rem;
 }
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__box--info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+.footer__box--links {
+  text-decoration: none;
+  color: black;
+  font-weight: 0;
+  margin: 1rem 0rem;
+}
+.footer__box--links:hover {
+  text-decoration: underline;
+}
+
 .section-cards {
   display: flex;
   justify-content: center;

@@ -1,13 +1,30 @@
 .footer {
-    height: 50rem;
+    height: 47rem;
     background-color: #F7F7F7;
     border-top: 1px solid #DDDDDD;
-    padding: 2rem 8rem;
+    padding: 4rem 8rem;
 
     &__box {
 
+        display: flex;
+        justify-content: space-between;
+
         &--info {
-            
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+        }
+
+        &--links {
+            text-decoration: none;
+            //padding: 1rem 0rem;
+            color: black;
+            font-weight: 0;
+            margin: 1rem 0rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
