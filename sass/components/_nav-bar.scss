@@ -56,10 +56,10 @@
     &__settings {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         z-index: 10;
 
         &-menu {
-
             position: relative;
 
             &--1 {
@@ -74,8 +74,9 @@
 
                 position: absolute;
                 right: 0%;
-                bottom: -240%;
+                bottom: 0%;
                 z-index: 1;
+                transform: translateY(100%);
 
                 display: none;
 

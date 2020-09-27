@@ -51,17 +51,24 @@
                     <button class="btn-white setting-link" id="button-settings" data-hide="settings-menu" data-menu="settings-lan"><i class="fas fa-globe margin-right-xsmall"></i><i class="fas fa-angle-down"></i></button>
 
                     <div class="nav-bar__settings-menu--1 settings-menu" id="settings-lan">
-                        <a class="menu-text"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
-                        <a class="menu-text"><i class="fas fa-globe margin-right-xsmall"></i>Eur</a>
+                        <a class="menu-text menu-text-lan"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
+                        <a class="menu-text menu-text-lan"><i class="fas fa-globe margin-right-xsmall"></i>Eur</a>
                     </div>                    
                 </div>
 
                 <div class="nav-bar__settings-menu">
-                    <button class="btn-white btn-white-profile setting-link background-color" id="button-settings" data-hide="settings-menu" data-menu="settings-profile"><i class="fas fa-bars margin-right-xsmall"></i><i class="fas fa-user-circle"></i></button>
+                    <button class="btn-white btn-white-profile setting-link" id="button-settings" data-hide="settings-menu" data-menu="settings-profile">
+                        <i class="fas fa-bars margin-right-xsmall" data-hide="settings-menu" data-menu="settings-profile"></i>
+                        <i class="fas fa-user-circle" data-hide="settings-menu" data-menu="settings-profile"></i>
+                    </button>
 
                     <div class="nav-bar__settings-menu--1 settings-menu" id="settings-profile">
                         <a class="menu-text">Sign up</a>
                         <a class="menu-text">Log in</a>
+                        <a class="menu-text-bar"></a>
+                        <a class="menu-text">Host your home</a>
+                        <a class="menu-text">Host your experiences</a>
+                        <a class="menu-text">Help</a>
                     </div>
                 </div>
             </div>

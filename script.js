@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function()
         // If the element's touched is the button of settings menu
         if (element.dataset.hide === "settings-menu")
         {
+
             // Hide all the menus
             document.querySelectorAll(`.${element.dataset.hide}`).forEach( hd => 
             {

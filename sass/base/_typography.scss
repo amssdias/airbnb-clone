@@ -23,6 +23,20 @@
     padding: 1.5rem 1.5rem;
     background-color: rgba(255, 255, 255, 1);
     text-decoration: none;
+    font-weight: 300;
+    width: 100%;
+
+    &-lan {
+        font-weight: 700;
+    }
+
+    &-bar {
+        height: 0.05rem;
+        display: block;
+        width: 100%;
+        background-color:  rgba(0, 0, 0, 0.1);
+        margin: 1rem 0rem;
+    }
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.1);

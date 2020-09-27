@@ -40,6 +40,18 @@ body {
   padding: 1.5rem 1.5rem;
   background-color: white;
   text-decoration: none;
+  font-weight: 300;
+  width: 100%;
+}
+.menu-text-lan {
+  font-weight: 700;
+}
+.menu-text-bar {
+  height: 0.05rem;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 1rem 0rem;
 }
 .menu-text:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -198,7 +210,7 @@ body {
 }
 
 .btn-white {
-  padding: 1.5rem 1.5rem;
+  padding: 1.2rem 1.4rem;
   border-radius: 40rem;
   border: none;
   font-weight: 400;
@@ -421,6 +433,7 @@ body {
 .nav-bar__settings {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
 }
 .nav-bar__settings-menu {
@@ -437,8 +450,9 @@ body {
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
   position: absolute;
   right: 0%;
-  bottom: -240%;
+  bottom: 0%;
   z-index: 1;
+  transform: translateY(100%);
   display: none;
 }
 
