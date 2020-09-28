@@ -3,17 +3,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    padding: 0rem 2rem;
+
     z-index: 1000;
     background-color: white;
     width: 65%;
     height: 50rem;
-
     border-radius: 2rem;
+
+    //display: none;
 
 
     &__close {
         border-bottom: 1px solid  rgba(0, 0, 0, 0.1);
-        padding: 1.4rem 2rem;
+        padding: 1.4rem 0rem;
 
         &--exit {
             display: inline-block;
@@ -56,11 +60,16 @@
         }
     }
 
+    &__heading {
+        font-size: 2.6rem;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 300rem;
+        padding: 2.4rem 0rem;
+    }
+
     &__choose {
         display: flex;
         flex-wrap: wrap;
-
-        padding: 2rem 2rem;
 
         &--currency {
             font-size: 1.8rem;
