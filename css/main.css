@@ -89,6 +89,10 @@ body {
   margin-right: 3rem;
 }
 
+.margin-left-small {
+  margin-left: 2rem;
+}
+
 .margin-top-xsmall {
   margin-top: 1rem;
 }
@@ -320,6 +324,66 @@ body {
   text-decoration: underline;
   font-size: 1.4rem;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.currencys {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  width: 65%;
+  height: 50rem;
+  border-radius: 2rem;
+}
+.currencys__close {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.4rem 2rem;
+}
+.currencys__close--exit {
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.currencys__close--exit:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.currencys__close--exit::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2px;
+  background-color: black;
+  transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.currencys__close--exit::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2px;
+  background-color: black;
+  transform: translateX(-50%) rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.currencys__choose {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 2rem;
+}
+.currencys__choose--currency {
+  font-size: 1.8rem;
+  margin-right: 2.2rem;
+  margin-bottom: 2.2rem;
 }
 
 .future-trips {
