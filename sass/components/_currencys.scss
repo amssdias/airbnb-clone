@@ -1,3 +1,14 @@
+.box-currency {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .currencys {
     position: fixed;
     top: 50%;
@@ -6,13 +17,14 @@
 
     padding: 0rem 2rem;
 
-    z-index: 1000;
+    //z-index: 1000;
     background-color: white;
     width: 70%;
-    height: 50rem;
+    height: 60rem;
     border-radius: 2rem;
 
-    display: none;
+    display: inherit;
+    overflow: scroll;
 
 
     &__close {
