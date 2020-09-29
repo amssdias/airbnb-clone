@@ -337,7 +337,7 @@ body {
   width: 70%;
   height: 50rem;
   border-radius: 2rem;
-  display: block;
+  display: none;
 }
 .currencys__close {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
