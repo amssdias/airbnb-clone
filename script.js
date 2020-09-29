@@ -47,14 +47,34 @@ document.addEventListener("DOMContentLoaded", function()
                 elementMenu.style.display = "none";
             }
         }
-        
-        // Hide all the seetings menu
-        else
+
+        // Show currency box
+        else if (element.dataset.currency === "currency-show")
         {
+            document.querySelector("#currency-box").style.display = "block";
+            document.querySelector('body').style.overflow = "hidden";
+
+            // Hide the settings menu
             document.querySelectorAll(".settings-menu").forEach( menu => 
             {
                 menu.style.display = "none";
             });
+
+            document.querySelector("#exit-currency-box").onclick = () => 
+            {
+                document.querySelector("#currency-box").style.display = "none";
+            }
+        }
+        
+        // Hide everything
+        else
+        {   
+            // Hide all the settings menu
+            document.querySelectorAll(".settings-menu").forEach( menu => 
+            {
+                menu.style.display = "none";
+            });
+            //document.querySelector("#currency-box").style.display = "none";
         };
     });
 

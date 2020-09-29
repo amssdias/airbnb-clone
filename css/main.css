@@ -338,17 +338,16 @@ body {
 }
 
 .currencys {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0rem 2rem;
   background-color: white;
   width: 70%;
-  height: 60rem;
+  height: 90%;
   border-radius: 2rem;
   display: inherit;
-  overflow: scroll;
 }
 .currencys__close {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -388,6 +387,10 @@ body {
   top: 50%;
   left: 50%;
 }
+.currencys__scroll {
+  overflow: scroll;
+  height: 90%;
+}
 .currencys__heading {
   font-size: 2.6rem;
   color: rgba(0, 0, 0, 0.5);
@@ -397,6 +400,7 @@ body {
 .currencys__choose {
   display: flex;
   flex-wrap: wrap;
+  height: inherit;
 }
 .currencys__choose--currency {
   font-size: 1.4rem;

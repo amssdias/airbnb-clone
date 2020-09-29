@@ -52,7 +52,7 @@
 
                     <div class="nav-bar__settings-menu--1 settings-menu" id="settings-lan">
                         <a class="menu-text menu-text-lan"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
-                        <a class="menu-text menu-text-lan"><i class="fas fa-globe margin-right-xsmall"></i>Eur</a>
+                        <a class="menu-text menu-text-lan" data-currency="currency-show"><i class="fas fa-globe margin-right-xsmall"></i>Eur</a>
                     </div>                    
                 </div>
 
@@ -136,177 +136,180 @@
     </header>
 
     <!-- Choose currency -->
-    <div class="box-currency">
+    <div id="currency-box" class="box-currency">
 
         <div class="currencys">
-        <div class="currencys__close">
-            <span class="currencys__close--exit"></span>
-        </div>
-        
-        <h2 class="currencys__heading">Choose a currency</h2>
+            <div class="currencys__close">
+                <span id="exit-currency-box" class="currencys__close--exit"></span>
+            </div>
+            
+            <div class="currencys__scroll">
+                <h2 class="currencys__heading">Choose a currency</h2>
 
-        <div class="currencys__choose">
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Pound sterling</p>
-                <p class="currencys__choose--currency-code">GBP - £</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Australian dollar</p>
-                <p class="currencys__choose--currency-code">AUD - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Brazillian real</p>
-                <p class="currencys__choose--currency-code">BRL - R$</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Bulgarian lev</p>
-                <p class="currencys__choose--currency-code">BGN - £</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Canadian dollar</p>
-                <p class="currencys__choose--currency-code">CAD - &#36;</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Chilean peso</p>
-                <p class="currencys__choose--currency-code">CLP - &#36;</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Chinese yuan</p>
-                <p class="currencys__choose--currency-code">CNY - ¥</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Colombian peso</p>
-                <p class="currencys__choose--currency-code">COP - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Costa Rican colon</p>
-                <p class="currencys__choose--currency-code">CRC - &#8353;</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Croatian kuna</p>
-                <p class="currencys__choose--currency-code">HRK - kn</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Czech koruna</p>
-                <p class="currencys__choose--currency-code">CZK - Kč</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Danish krone</p>
-                <p class="currencys__choose--currency-code">DKK - kr</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Emirati dirham</p>
-                <p class="currencys__choose--currency-code">AED - &#x62f;&#x2e;&#x625;</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Euro</p>
-                <p class="currencys__choose--currency-code">Eur - €</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Hong Kong dollar</p>
-                <p class="currencys__choose--currency-code">HKD - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Hungarian forint</p>
-                <p class="currencys__choose--currency-code">HUF - Ft</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Indian rupee</p>
-                <p class="currencys__choose--currency-code">INR - &#8377;</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Israeli new shekel</p>
-                <p class="currencys__choose--currency-code">ILS - &#8362;</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Japanese yen</p>
-                <p class="currencys__choose--currency-code">JPY - ¥</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Malaysian ringgit</p>
-                <p class="currencys__choose--currency-code">MYR - RM</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Mexican Peso</p>
-                <p class="currencys__choose--currency-code">MXN - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Moroccan dirham</p>
-                <p class="currencys__choose--currency-code">MAD</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">New Taiwan dollar</p>
-                <p class="currencys__choose--currency-code">TWD - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">New Zealand dollar</p>
-                <p class="currencys__choose--currency-code">NZD - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Norwegian krone</p>
-                <p class="currencys__choose--currency-code">NOK - kr</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Peruvian sol</p>
-                <p class="currencys__choose--currency-code">PEN - S/</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Philippine peso</p>
-                <p class="currencys__choose--currency-code">PHP - </p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Polish zloty</p>
-                <p class="currencys__choose--currency-code">PLN - </p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Romanian leu</p>
-                <p class="currencys__choose--currency-code">RON - lei</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Russian ruble</p>
-                <p class="currencys__choose--currency-code">RUB - </p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Saudi Arabian riyal</p>
-                <p class="currencys__choose--currency-code">SAR - SR</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Singapore dollar</p>
-                <p class="currencys__choose--currency-code">SGD - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">South African rand</p>
-                <p class="currencys__choose--currency-code">ZAR - R</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">South Korean won</p>
-                <p class="currencys__choose--currency-code">KRW - </p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Swedish krona</p>
-                <p class="currencys__choose--currency-code">SEK - kr</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Swiss franc</p>
-                <p class="currencys__choose--currency-code">CHF</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Thai baht</p>
-                <p class="currencys__choose--currency-code">THB - </p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Turkish lira</p>
-                <p class="currencys__choose--currency-code">TRY - </p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">United States dollar</p>
-                <p class="currencys__choose--currency-code">USD - $</p>
-            </a>
-            <a class="currencys__choose--currency">
-                <p class="currencys__choose--currency-title">Uruguayan peso</p>
-                <p class="currencys__choose--currency-code">UYU - $U</p>
-            </a>
-        </div>
+                <div class="currencys__choose">
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Pound sterling</p>
+                    <p class="currencys__choose--currency-code">GBP - £</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Australian dollar</p>
+                    <p class="currencys__choose--currency-code">AUD - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Brazillian real</p>
+                    <p class="currencys__choose--currency-code">BRL - R$</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Bulgarian lev</p>
+                    <p class="currencys__choose--currency-code">BGN - £</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Canadian dollar</p>
+                    <p class="currencys__choose--currency-code">CAD - &#36;</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Chilean peso</p>
+                    <p class="currencys__choose--currency-code">CLP - &#36;</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Chinese yuan</p>
+                    <p class="currencys__choose--currency-code">CNY - ¥</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Colombian peso</p>
+                    <p class="currencys__choose--currency-code">COP - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Costa Rican colon</p>
+                    <p class="currencys__choose--currency-code">CRC - &#8353;</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Croatian kuna</p>
+                    <p class="currencys__choose--currency-code">HRK - kn</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Czech koruna</p>
+                    <p class="currencys__choose--currency-code">CZK - Kč</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Danish krone</p>
+                    <p class="currencys__choose--currency-code">DKK - kr</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Emirati dirham</p>
+                    <p class="currencys__choose--currency-code">AED - &#x62f;&#x2e;&#x625;</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Euro</p>
+                    <p class="currencys__choose--currency-code">Eur - €</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Hong Kong dollar</p>
+                    <p class="currencys__choose--currency-code">HKD - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Hungarian forint</p>
+                    <p class="currencys__choose--currency-code">HUF - Ft</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Indian rupee</p>
+                    <p class="currencys__choose--currency-code">INR - &#8377;</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Israeli new shekel</p>
+                    <p class="currencys__choose--currency-code">ILS - &#8362;</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Japanese yen</p>
+                    <p class="currencys__choose--currency-code">JPY - ¥</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Malaysian ringgit</p>
+                    <p class="currencys__choose--currency-code">MYR - RM</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Mexican Peso</p>
+                    <p class="currencys__choose--currency-code">MXN - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Moroccan dirham</p>
+                    <p class="currencys__choose--currency-code">MAD</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">New Taiwan dollar</p>
+                    <p class="currencys__choose--currency-code">TWD - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">New Zealand dollar</p>
+                    <p class="currencys__choose--currency-code">NZD - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Norwegian krone</p>
+                    <p class="currencys__choose--currency-code">NOK - kr</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Peruvian sol</p>
+                    <p class="currencys__choose--currency-code">PEN - S/</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Philippine peso</p>
+                    <p class="currencys__choose--currency-code">PHP - </p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Polish zloty</p>
+                    <p class="currencys__choose--currency-code">PLN - </p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Romanian leu</p>
+                    <p class="currencys__choose--currency-code">RON - lei</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Russian ruble</p>
+                    <p class="currencys__choose--currency-code">RUB - </p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Saudi Arabian riyal</p>
+                    <p class="currencys__choose--currency-code">SAR - SR</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Singapore dollar</p>
+                    <p class="currencys__choose--currency-code">SGD - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">South African rand</p>
+                    <p class="currencys__choose--currency-code">ZAR - R</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">South Korean won</p>
+                    <p class="currencys__choose--currency-code">KRW - </p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Swedish krona</p>
+                    <p class="currencys__choose--currency-code">SEK - kr</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Swiss franc</p>
+                    <p class="currencys__choose--currency-code">CHF</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Thai baht</p>
+                    <p class="currencys__choose--currency-code">THB - </p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Turkish lira</p>
+                    <p class="currencys__choose--currency-code">TRY - </p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">United States dollar</p>
+                    <p class="currencys__choose--currency-code">USD - $</p>
+                </a>
+                <a class="currencys__choose--currency">
+                    <p class="currencys__choose--currency-title">Uruguayan peso</p>
+                    <p class="currencys__choose--currency-code">UYU - $U</p>
+                </a>
+                </div>
+            </div>
+            
         </div>
         
     </div>
