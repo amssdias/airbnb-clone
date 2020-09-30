@@ -60,9 +60,17 @@ document.addEventListener("DOMContentLoaded", function()
                 menu.style.display = "none";
             });
 
+            // After animation is done
+            document.querySelector('#currency-main').addEventListener('animationend', () => 
+            {
+                document.querySelector(".currencys__scroll").style.display = "block";
+            })
+
             document.querySelector("#exit-currency-box").onclick = () => 
             {
                 document.querySelector("#currency-box").style.display = "none";
+                document.querySelector(".currencys__scroll").style.display = "none";
+                document.querySelector('body').style.overflow = "scroll";
             }
         }
         

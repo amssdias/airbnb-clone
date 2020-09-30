@@ -1,9 +1,10 @@
 .box-currency {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+
     z-index: 1000;
     display: none;
     background-color: rgba(0, 0, 0, 0.7);
@@ -18,11 +19,15 @@
     padding: 0rem 2rem;
 
     background-color: white;
+    box-shadow: .6rem .5rem 1rem rgba(0, 0, 0, 0.5);
     width: 70%;
-    height: 90%;
+    height: 30%;
     border-radius: 2rem;
 
-    display: inherit;
+    display: block;
+    animation-name: currencys;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 
 
     &__close {
@@ -72,7 +77,9 @@
 
     &__scroll {
         overflow: scroll;
+        overflow-x: hidden;
         height: 90%;
+        display: none;
     }
 
     &__heading {
