@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function()
             }
         }
 
-        // Show currency box
-        else if (element.dataset.currency === "currency-show")
+        // Show popup box
+        else if (element.dataset.popup === "currency-box" || element.dataset.popup === "language-box")
         {
-            document.querySelector("#currency-box").style.display = "block";
+            document.querySelector(`#${element.dataset.popup}`).style.display = "block";
             document.querySelector('body').style.overflow = "hidden";
 
             // Hide the settings menu
@@ -61,17 +61,26 @@ document.addEventListener("DOMContentLoaded", function()
             });
 
             // After animation is done
-            document.querySelector('#currency-main').addEventListener('animationend', () => 
+            document.querySelector('.pop-up-currency').addEventListener('animationend', () => 
             {
-                document.querySelector(".currencys__scroll").style.display = "block";
+                document.querySelector(".pop-up__scroll").style.display = "block";
             })
 
-            document.querySelector("#exit-currency-box").onclick = () => 
+            document.querySelector('.pop-up-language').addEventListener('animationend', () => 
             {
-                document.querySelector("#currency-box").style.display = "none";
-                document.querySelector(".currencys__scroll").style.display = "none";
-                document.querySelector('body').style.overflow = "scroll";
-            }
+                document.querySelector(".scroll-language").style.display = "block";
+            })
+
+            
+
+            document.querySelectorAll(".exit-popup-box").forEach( close => {
+                close.onclick = () => 
+                {
+                    document.querySelector(`#${element.dataset.popup}`).style.display = "none";
+                    document.querySelector(".pop-up__scroll").style.display = "none";
+                    document.querySelector('body').style.overflow = "scroll";
+                }
+            })
         }
         
         // Hide everything

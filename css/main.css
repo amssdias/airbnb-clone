@@ -340,112 +340,6 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.box-currency {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1000;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.currencys {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0rem 2rem;
-  background-color: white;
-  box-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  width: 70%;
-  height: 30%;
-  border-radius: 2rem;
-  display: block;
-  animation-name: currencys;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-.currencys__close {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1.4rem 0rem;
-}
-.currencys__close--exit {
-  display: inline-block;
-  position: relative;
-  padding: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
-.currencys__close--exit:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.currencys__close--exit::before {
-  content: "";
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.2px;
-  background-color: black;
-  transform: translateX(-50%) rotate(45deg);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-.currencys__close--exit::after {
-  content: "";
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.2px;
-  background-color: black;
-  transform: translateX(-50%) rotate(-45deg);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-.currencys__scroll {
-  overflow: scroll;
-  overflow-x: hidden;
-  height: 90%;
-  display: none;
-}
-.currencys__heading {
-  font-size: 2.6rem;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 300rem;
-  padding: 2.4rem 0rem;
-}
-.currencys__choose {
-  display: flex;
-  flex-wrap: wrap;
-  height: inherit;
-}
-.currencys__choose--currency {
-  font-size: 1.4rem;
-  font-weight: 300;
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 1.2rem;
-  width: 18%;
-  border-radius: 1rem;
-  border: 0.2px solid transparent;
-}
-.currencys__choose--currency:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.currencys__choose--currency:active {
-  border: 0.2px solid black;
-}
-.currencys__choose--currency-title {
-  margin-bottom: 0.4rem;
-}
-.currencys__choose--currency-code {
-  color: rgba(0, 0, 0, 0.8);
-}
-
 .future-trips {
   height: 100%;
 }
@@ -578,6 +472,111 @@ body {
   z-index: 1;
   transform: translateY(100%);
   display: none;
+}
+
+.popup-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0rem 2rem;
+  background-color: white;
+  box-shadow: 0.6rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  width: 70%;
+  height: 30%;
+  border-radius: 2rem;
+  display: block;
+  animation-name: currencys;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.pop-up__close {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.4rem 0rem;
+}
+.pop-up__close--exit {
+  display: inline-block;
+  position: relative;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.pop-up__close--exit:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.pop-up__close--exit::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2px;
+  background-color: black;
+  transform: translateX(-50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.pop-up__close--exit::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.2px;
+  background-color: black;
+  transform: translateX(-50%) rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.pop-up__scroll {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 90%;
+  display: none;
+}
+.pop-up__heading {
+  font-size: 2.6rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 300rem;
+  padding: 2.4rem 0rem;
+}
+.pop-up__choose {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pop-up__choose--option {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  width: 18%;
+  border-radius: 1rem;
+  border: 0.2px solid transparent;
+}
+.pop-up__choose--option:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.pop-up__choose--option:active {
+  border: 0.2px solid black;
+}
+.pop-up__choose--option-title {
+  margin-bottom: 0.4rem;
+}
+.pop-up__choose--option-code {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .search__bar--main-box {

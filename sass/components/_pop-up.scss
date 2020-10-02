@@ -1,4 +1,4 @@
-.box-currency {
+.popup-back {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.currencys {
+.pop-up {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,10 +92,11 @@
     &__choose {
         display: flex;
         flex-wrap: wrap;
-        //overflow: hidden;
-        height: inherit;
+        //align-items: flex-start;
+        //justify-content: flex-start;
+        //height: inherit;
 
-        &--currency {
+        &--option {
             font-size: 1.4rem;
             font-weight: 300;
             margin-right: 1.5rem;

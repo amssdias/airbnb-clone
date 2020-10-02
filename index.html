@@ -54,8 +54,8 @@
                     </button>
 
                     <div class="nav-bar__settings-menu--1 settings-menu" id="settings-lan">
-                        <a class="menu-text menu-text-lan"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
-                        <a class="menu-text menu-text-lan" data-currency="currency-show"><i class="fas fa-pound-sign margin-right-xsmall"></i>GBP</a>
+                        <a class="menu-text menu-text-lan" data-popup="language-box"><i class="fas fa-globe margin-right-xsmall"></i>English (US)</a>
+                        <a class="menu-text menu-text-lan" data-popup="currency-box"><i class="fas fa-pound-sign margin-right-xsmall"></i>GBP</a>
                     </div>                    
                 </div>
 
@@ -139,178 +139,427 @@
     </header>
 
     <!-- Choose currency -->
-    <div id="currency-box" class="box-currency">
+    <div id="currency-box" class="popup-back">
 
-        <div id="currency-main" class="currencys">
+        <div id="currency-main" class="pop-up pop-up-currency">
 
-            <div class="currencys__close">
-                <span id="exit-currency-box" class="currencys__close--exit"></span>
+            <div class="pop-up__close">
+                <span class="pop-up__close--exit exit-popup-box"></span>
             </div>
             
-            <div class="currencys__scroll">
-                <h2 class="currencys__heading">Choose a currency</h2>
+            <div class="pop-up__scroll">
+                <h2 class="pop-up__heading">Choose a currency</h2>
 
-                <div class="currencys__choose">
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Pound sterling</p>
-                    <p class="currencys__choose--currency-code">GBP - £</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Australian dollar</p>
-                    <p class="currencys__choose--currency-code">AUD - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Brazillian real</p>
-                    <p class="currencys__choose--currency-code">BRL - R$</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Bulgarian lev</p>
-                    <p class="currencys__choose--currency-code">BGN - £</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Canadian dollar</p>
-                    <p class="currencys__choose--currency-code">CAD - &#36;</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Chilean peso</p>
-                    <p class="currencys__choose--currency-code">CLP - &#36;</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Chinese yuan</p>
-                    <p class="currencys__choose--currency-code">CNY - ¥</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Colombian peso</p>
-                    <p class="currencys__choose--currency-code">COP - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Costa Rican colon</p>
-                    <p class="currencys__choose--currency-code">CRC - &#8353;</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Croatian kuna</p>
-                    <p class="currencys__choose--currency-code">HRK - kn</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Czech koruna</p>
-                    <p class="currencys__choose--currency-code">CZK - Kč</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Danish krone</p>
-                    <p class="currencys__choose--currency-code">DKK - kr</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Emirati dirham</p>
-                    <p class="currencys__choose--currency-code">AED - &#x62f;&#x2e;&#x625;</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Euro</p>
-                    <p class="currencys__choose--currency-code">Eur - €</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Hong Kong dollar</p>
-                    <p class="currencys__choose--currency-code">HKD - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Hungarian forint</p>
-                    <p class="currencys__choose--currency-code">HUF - Ft</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Indian rupee</p>
-                    <p class="currencys__choose--currency-code">INR - &#8377;</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Israeli new shekel</p>
-                    <p class="currencys__choose--currency-code">ILS - &#8362;</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Japanese yen</p>
-                    <p class="currencys__choose--currency-code">JPY - ¥</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Malaysian ringgit</p>
-                    <p class="currencys__choose--currency-code">MYR - RM</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Mexican Peso</p>
-                    <p class="currencys__choose--currency-code">MXN - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Moroccan dirham</p>
-                    <p class="currencys__choose--currency-code">MAD</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">New Taiwan dollar</p>
-                    <p class="currencys__choose--currency-code">TWD - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">New Zealand dollar</p>
-                    <p class="currencys__choose--currency-code">NZD - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Norwegian krone</p>
-                    <p class="currencys__choose--currency-code">NOK - kr</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Peruvian sol</p>
-                    <p class="currencys__choose--currency-code">PEN - S/</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Philippine peso</p>
-                    <p class="currencys__choose--currency-code">PHP - </p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Polish zloty</p>
-                    <p class="currencys__choose--currency-code">PLN - </p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Romanian leu</p>
-                    <p class="currencys__choose--currency-code">RON - lei</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Russian ruble</p>
-                    <p class="currencys__choose--currency-code">RUB - </p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Saudi Arabian riyal</p>
-                    <p class="currencys__choose--currency-code">SAR - SR</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Singapore dollar</p>
-                    <p class="currencys__choose--currency-code">SGD - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">South African rand</p>
-                    <p class="currencys__choose--currency-code">ZAR - R</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">South Korean won</p>
-                    <p class="currencys__choose--currency-code">KRW - </p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Swedish krona</p>
-                    <p class="currencys__choose--currency-code">SEK - kr</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Swiss franc</p>
-                    <p class="currencys__choose--currency-code">CHF</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Thai baht</p>
-                    <p class="currencys__choose--currency-code">THB - </p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Turkish lira</p>
-                    <p class="currencys__choose--currency-code">TRY - </p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">United States dollar</p>
-                    <p class="currencys__choose--currency-code">USD - $</p>
-                </a>
-                <a class="currencys__choose--currency">
-                    <p class="currencys__choose--currency-title">Uruguayan peso</p>
-                    <p class="currencys__choose--currency-code">UYU - $U</p>
-                </a>
+                <div class="pop-up__choose">
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Pound sterling</p>
+                        <p class="pop-up__choose--option-code">GBP - £</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Australian dollar</p>
+                        <p class="pop-up__choose--option-code">AUD - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Brazillian real</p>
+                        <p class="pop-up__choose--option-code">BRL - R$</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Bulgarian lev</p>
+                        <p class="pop-up__choose--option-code">BGN - £</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Canadian dollar</p>
+                        <p class="pop-up__choose--option-code">CAD - &#36;</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Chilean peso</p>
+                        <p class="pop-up__choose--option-code">CLP - &#36;</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Chinese yuan</p>
+                        <p class="pop-up__choose--option-code">CNY - ¥</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Colombian peso</p>
+                        <p class="pop-up__choose--option-code">COP - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Costa Rican colon</p>
+                        <p class="pop-up__choose--option-code">CRC - &#8353;</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Croatian kuna</p>
+                        <p class="pop-up__choose--option-code">HRK - kn</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Czech koruna</p>
+                        <p class="pop-up__choose--option-code">CZK - Kč</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Danish krone</p>
+                        <p class="pop-up__choose--option-code">DKK - kr</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Emirati dirham</p>
+                        <p class="pop-up__choose--option-code">AED - &#x62f;&#x2e;&#x625;</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Euro</p>
+                        <p class="pop-up__choose--option-code">Eur - €</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Hong Kong dollar</p>
+                        <p class="pop-up__choose--option-code">HKD - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Hungarian forint</p>
+                        <p class="pop-up__choose--option-code">HUF - Ft</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Indian rupee</p>
+                        <p class="pop-up__choose--option-code">INR - &#8377;</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Israeli new shekel</p>
+                        <p class="pop-up__choose--option-code">ILS - &#8362;</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Japanese yen</p>
+                        <p class="pop-up__choose--option-code">JPY - ¥</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Malaysian ringgit</p>
+                        <p class="pop-up__choose--option-code">MYR - RM</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Mexican Peso</p>
+                        <p class="pop-up__choose--option-code">MXN - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Moroccan dirham</p>
+                        <p class="pop-up__choose--option-code">MAD</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">New Taiwan dollar</p>
+                        <p class="pop-up__choose--option-code">TWD - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">New Zealand dollar</p>
+                        <p class="pop-up__choose--option-code">NZD - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Norwegian krone</p>
+                        <p class="pop-up__choose--option-code">NOK - kr</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Peruvian sol</p>
+                        <p class="pop-up__choose--option-code">PEN - S/</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Philippine peso</p>
+                        <p class="pop-up__choose--option-code">PHP - </p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Polish zloty</p>
+                        <p class="pop-up__choose--option-code">PLN - </p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Romanian leu</p>
+                        <p class="pop-up__choose--option-code">RON - lei</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Russian ruble</p>
+                        <p class="pop-up__choose--option-code">RUB - </p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Saudi Arabian riyal</p>
+                        <p class="pop-up__choose--option-code">SAR - SR</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Singapore dollar</p>
+                        <p class="pop-up__choose--option-code">SGD - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">South African rand</p>
+                        <p class="pop-up__choose--option-code">ZAR - R</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">South Korean won</p>
+                        <p class="pop-up__choose--option-code">KRW - </p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Swedish krona</p>
+                        <p class="pop-up__choose--option-code">SEK - kr</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Swiss franc</p>
+                        <p class="pop-up__choose--option-code">CHF</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Thai baht</p>
+                        <p class="pop-up__choose--option-code">THB - </p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Turkish lira</p>
+                        <p class="pop-up__choose--option-code">TRY - </p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">United States dollar</p>
+                        <p class="pop-up__choose--option-code">USD - $</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Uruguayan peso</p>
+                        <p class="pop-up__choose--option-code">UYU - $U</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- Choose language -->
+    <div id="language-box" class="popup-back">
+
+        <div id="language-main" class="pop-up pop-up-language">
+
+            <div class="pop-up__close">
+                <span class="pop-up__close--exit exit-popup-box"></span>
+            </div>
+            
+            <div class="pop-up__scroll scroll-language">
+                <h2 class="pop-up__heading">Suggested languages and regions</h2>
+
+                <div class="pop-up__choose">
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Português</p>
+                        <p class="pop-up__choose--option-code">Portugal</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Português</p>
+                        <p class="pop-up__choose--option-code">Brasil</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">United States</p>
+                    </a>
+                </div>
+
+                <h2 class="pop-up__heading">Choose a language and region</h2>
+                <div class="pop-up__choose">
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">United Kingdom</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Azerbaycan dili</p>
+                        <p class="pop-up__choose--option-code">Azerbaycan</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Bahasa Indonesia</p>
+                        <p class="pop-up__choose--option-code">Indonesia</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Bosanski</p>
+                        <p class="pop-up__choose--option-code">Bosna i Hercegovina</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Català</p>
+                        <p class="pop-up__choose--option-code">Espanya</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Čeština</p>
+                        <p class="pop-up__choose--option-code">Česká republika</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Crnogorski</p>
+                        <p class="pop-up__choose--option-code">Crna Gora</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Dansk</p>
+                        <p class="pop-up__choose--option-code">Danmark</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Deutsch</p>
+                        <p class="pop-up__choose--option-code">Deutschland</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Deutsch</p>
+                        <p class="pop-up__choose--option-code">Osterreich</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Deutsch</p>
+                        <p class="pop-up__choose--option-code">Schweiz</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Eesti</p>
+                        <p class="pop-up__choose--option-code">Eesti</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">Australia</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">Canada</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">Guyana</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">India</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">Ireland</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">New Zealand</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">Singapore</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">English</p>
+                        <p class="pop-up__choose--option-code">United Arab Emirates</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Argentina</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Belice</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Bolivia</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Chile</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Colombia</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Costa Rica</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Ecuador</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">El Salvador</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">España</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Estados Unidos</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Guatemala</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Honduras</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Latinoamérica</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">México</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Nicaragua</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Panamá</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Paraguay</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Perú</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Español</p>
+                        <p class="pop-up__choose--option-code">Venezuela</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Français</p>
+                        <p class="pop-up__choose--option-code">Belgique</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Français</p>
+                        <p class="pop-up__choose--option-code">Canada</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Français</p>
+                        <p class="pop-up__choose--option-code">France</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Français</p>
+                        <p class="pop-up__choose--option-code">Suisse</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Gaeilge</p>
+                        <p class="pop-up__choose--option-code">Éire</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Hrvatski</p>
+                        <p class="pop-up__choose--option-code">Hrvatska</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">isiXhosa</p>
+                        <p class="pop-up__choose--option-code">eMzantsi Afrika</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">isiZulu</p>
+                        <p class="pop-up__choose--option-code">iNingizimu Africa</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Íslenska</p>
+                        <p class="pop-up__choose--option-code">Ísland</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Italiano</p>
+                        <p class="pop-up__choose--option-code">Italia</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Italiano</p>
+                        <p class="pop-up__choose--option-code">Svizzera</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Kiswahili</p>
+                        <p class="pop-up__choose--option-code">Afrika</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Latviesu</p>
+                        <p class="pop-up__choose--option-code">Latvija</p>
+                    </a>
+                    <a class="pop-up__choose--option">
+                        <p class="pop-up__choose--option-title">Lietuviu</p>
+                        <p class="pop-up__choose--option-code">Lietuva</p>
+                    </a>
+                    
                 </div>
             </div>
             
