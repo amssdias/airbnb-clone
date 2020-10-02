@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function()
                 {
                     document.querySelector(`#${element.dataset.popup}`).style.display = "none";
                     document.querySelector(".pop-up__scroll").style.display = "none";
-                    document.querySelector('body').style.overflow = "scroll";
+                    document.querySelector('body').style.overflowY = "scroll";
                 }
             })
         }

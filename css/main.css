@@ -419,9 +419,8 @@ body {
   transform: translateX(-50%) translateY(-50%);
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 30%;
 }
 .nav-bar__search__links {
   font-size: 1.5rem;
@@ -583,13 +582,13 @@ body {
   display: flex;
   background-color: white;
   border-radius: 40rem;
-  width: 60%;
+  width: 85rem;
 }
 .search__bar-experiences {
   display: flex;
   background-color: white;
   border-radius: 40rem;
-  width: 60%;
+  width: 85rem;
   display: none;
 }
 .search__bar--box {
