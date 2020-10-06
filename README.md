@@ -1,4 +1,4 @@
-# Airbnb-clone
+# Airbnb clone
 
 This is a Airbnb clone website I decided to make to show my front-end skills. Only using HTML, CSS, SCSS, Javascript. 
 
