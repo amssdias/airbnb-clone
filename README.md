@@ -2,5 +2,6 @@
 
 This is a Airbnb clone website I decided to make to show my front-end skills. It will be made all in HTML, CSS and Javascript. 
 
-To view:
-To see where I'm currently at, just download the code, and double click on the "index.html" file.
+## To view:
+* Download the code
+* Open the "index.html" file
