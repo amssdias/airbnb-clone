@@ -7,5 +7,8 @@ I only made the main page plus the language and currency pop-ups to see which la
 > Made on September 2020
 
 ## To view:
+https://amssdias.github.io/Airbnb-clone/
+
 * Download the code
 * Open the "index.html" file
+
