@@ -20,3 +20,10 @@
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
 }
+
+@mixin media-main-padding-sides($top-bottom) {
+    @media (max-width:1150px) {
+        padding: $top-bottom 4rem;
+    }
+    
+}

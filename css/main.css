@@ -301,32 +301,48 @@ body {
 }
 
 .card {
-  height: 38rem;
-  width: 35%;
+  height: auto;
+  width: 100%;
   border-radius: 2rem;
   cursor: pointer;
   box-shadow: 0.5rem 0.2rem 1rem rgba(0, 0, 0, 0.4);
 }
+.card__box {
+  display: flex;
+  justify-content: space-around;
+}
 .card--image {
   object-fit: cover;
-  height: 29rem;
+  height: 70%;
   width: 100%;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
 }
-.card__text {
-  border: 1px solid green;
+@media (max-width: 1150px) {
+  .card--image {
+    height: 80%;
+  }
 }
 .card--heading {
   font-size: 1.8rem;
   padding: 1.2rem 1.5rem;
   font-weight: 400;
 }
+@media (max-width: 1150px) {
+  .card--heading {
+    text-align: center;
+  }
+}
 .card--paragraph {
   padding: 0rem 1.5rem;
   padding-top: -1rem;
   font-size: 1.6rem;
   font-weight: 300;
+}
+@media (max-width: 1150px) {
+  .card--paragraph {
+    display: none;
+  }
 }
 
 .covid-bar {
@@ -681,6 +697,11 @@ body {
   border-top: 1px solid #DDDDDD;
   padding: 4rem 8rem 0rem 8rem;
 }
+@media (max-width: 1150px) {
+  .footer {
+    padding: 4rem 4rem 0rem 4rem;
+  }
+}
 .footer__box {
   display: flex;
   border-bottom: 1px solid #DDDDDD;
@@ -780,15 +801,25 @@ body {
 
 .section-cards {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: 3rem 8rem;
   padding-bottom: 7rem;
+}
+@media (max-width: 1150px) {
+  .section-cards {
+    padding: 3rem 4rem;
+  }
 }
 
 .section-broadway {
   background-color: black;
   color: white;
   padding: 6rem 8rem;
+}
+@media (max-width: 1150px) {
+  .section-broadway {
+    padding: 6rem 4rem;
+  }
 }
 
 .section-blm {
@@ -797,10 +828,20 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1150px) {
+  .section-blm {
+    padding: 9rem 4rem;
+  }
+}
 
 .section-future-trips {
   padding: 3rem 8rem;
   height: 40rem;
+}
+@media (max-width: 1150px) {
+  .section-future-trips {
+    padding: 3rem 4rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

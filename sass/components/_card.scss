@@ -1,29 +1,39 @@
 .card
 {
-    height: 38rem;
-    width: 35%;
+    height: auto;
+    width: 100%;
     border-radius: 2rem;
     cursor: pointer;
 
     box-shadow: .5rem .2rem 1rem rgb(0, 0, 0, 0.4);
 
+    &__box
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
     &--image
     {
         object-fit: cover;
-        height: 29rem;
+        height: 70%;
         width: 100%;
         border-top-right-radius: 2rem;
         border-top-left-radius: 2rem;
-    }
 
-    &__text {
-        border: 1px solid green;
+        @media (max-width:1150px) {
+            height: 80%;
+        }
     }
 
     &--heading {
         font-size: 1.8rem;
         padding: 1.2rem 1.5rem;
         font-weight: 400;
+
+        @media (max-width:1150px) {
+            text-align: center;
+        }
     }
 
     &--paragraph
@@ -32,5 +42,9 @@
         padding-top: -1rem;
         font-size: 1.6rem;
         font-weight: 300;
+
+        @media (max-width:1150px) {
+            display: none;
+        }
     }
 }

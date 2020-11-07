@@ -3,6 +3,10 @@
     border-top: 1px solid #DDDDDD;
     padding: 4rem 8rem 0rem 8rem;
 
+    @media (max-width:1150px) {
+        padding: 4rem 4rem 0rem 4rem;
+    }
+
     &__box {
         display: flex;
         border-bottom: 1px solid #DDDDDD;
