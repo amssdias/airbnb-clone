@@ -4,6 +4,7 @@
     align-items: center;
     padding: 2rem 0rem;
     position: relative;
+    font-size: 1.4rem;
 
 
     &__search {
@@ -20,7 +21,7 @@
         //width: 30%;
 
         &__links {
-            font-size: 1.5rem;
+            
             position: relative;
 
             &::after {
@@ -68,7 +69,6 @@
                 padding: 1rem 0rem;
                 border-radius: 1rem;
                 font-weight: 999;
-                font-size: 1.4rem;
                 width: 20rem;
                 box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.7);
 

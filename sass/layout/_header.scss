@@ -7,6 +7,10 @@
 
     height: 61rem;
 
+    @media (max-width:1150px) {
+        padding: 0rem 4rem;
+    }
+
     &__search {
         display: flex;
         flex-direction: row;
