@@ -1,6 +1,14 @@
-# Airbnb-clone
+# Airbnb clone
 
-This is a Airbnb clone website I decided to make to show my front-end skills. It will be made all in HTML, CSS and Javascript. 
+This is an Airbnb clone website I decided to make to show my front-end skills. Only using HTML, CSS, SCSS, Javascript and using the BEM methodology.
 
-To view:
-To see where I'm currently at, just download the code, and double click on the "index.html" file.
+I only made the main page plus the language and currency pop-ups to see which language and currency are available in the website.
+
+> Made on September 2020
+
+## To view:
+https://amssdias.github.io/Airbnb-clone/
+
+* Download the code
+* Open the "index.html" file
+
